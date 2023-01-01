@@ -1,0 +1,122 @@
+body {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(246,190,170,1) 50%, rgba(255,255,255,1) 90%);
+}
+
+header {
+  position: absolute;
+  width: 100vw;
+  background: #fff;
+  height: 75px;
+}
+
+#logo_oracle {
+  margin: 10px auto;
+  display: block;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.izquierda,
+.derecha {
+  width: 75%;
+  height: 300px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+#txt_ent,
+#txt_sal {
+  width: 99%;
+  height: 75%;
+  resize: none;
+  margin-top: 25px;
+  border: none;
+  font-size: 1.5em;
+}
+
+#txt_ent,
+#txt_sal {
+  text-align: center;
+}
+
+#txt_ent:focus,
+#txt_sal:focus {
+  outline: none;
+}
+
+#txt_men {
+  text-align: center;
+}
+
+.botonera {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+#btn_enc,
+#btn_des{
+  padding: 7px 0;
+  font-size: 1.2em;
+  border-radius: 12px;
+  border: none;
+  margin: 10px 0;
+}
+
+#btn_enc {
+  background: linear-gradient(rgb(255, 0, 0), rgb(136, 52, 52));
+  color: #fff;
+}
+
+#btn_enc:hover {
+  background: linear-gradient(rgb(136, 52, 52), rgb(255, 0, 0));
+  cursor: pointer;
+}
+
+#btn_des{
+  border: 1px solid rgb(75, 7, 7);
+  color: rgb(75, 7, 7);
+}
+
+#btn_des:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 805px) {
+  .contenedor {
+    flex-direction: row;
+  }
+  .izquierda,
+  .derecha {
+    width: 30%;
+  }
+  .botonera {
+    width: 15%;
+    margin: 30px;
+  }
+}
+
+footer {
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+footer img{
+  width: 30px;
+  color: rgb(83, 83, 83);
+}
